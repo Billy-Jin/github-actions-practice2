@@ -33,3 +33,8 @@ jobs:
                 echo $GITHUB_REPOSITORY
                 # $GITHUB_SHA commit의 id값
                 # $GITHUB_REPOSITORYGitHub의 Repository 값
+
+            - name: 아무한테 노출이 되면 안 되는 값
+              run: |
+                echo ${{ secrets.MY_NAME }}
+                echo ${{ secrets.MY_HOBBY }}
